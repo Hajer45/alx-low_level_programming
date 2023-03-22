@@ -2,12 +2,12 @@
 #include "6-abs.c"
 /**
  * print_last_digit - return last number
- * @n : int
+ * @n : long long
  * Return: int 0-10.
  */
 int print_last_digit(int n)
 {
-int l =_abs(n) % 10;
-_putchar('0'+l);
+int l = _abs(n) % 10;
+_putchar('0' + l);
 return (l);
 }
