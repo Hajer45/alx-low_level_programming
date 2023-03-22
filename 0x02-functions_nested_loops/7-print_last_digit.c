@@ -1,3 +1,5 @@
+#include "main.h"
+#include "6-abs.c"
 /**
  * print_last_digit - return last number
  * @n : int
@@ -5,8 +7,7 @@
  */
 int print_last_digit(int n)
 {
-if (n > 0)
-return (n % 10);
-else
-return ((-1 * n) % 10);
+int l =_abs(n) % 10;
+_putchar('0'+l);
+return (l);
 }
