@@ -1,5 +1,5 @@
 /**
- *_islower - test if c is lower 
+ *_islower - test if c is lower
  *@c: int number
  *Return:0 or 1
  */
