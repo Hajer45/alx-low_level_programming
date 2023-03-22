@@ -1,13 +1,22 @@
 #include "main.h"
-#include "6-abs.c"
+#include <limits.h>
 /**
  * print_last_digit - return last number
  * @n : long long
- * Return: int 0-10.
+ * Return: int 0-9.
  */
 int print_last_digit(int n)
 {
-int l = _abs(n) % 10;
-_putchar('0' + l);
-return (l);
+if (n == INT_MIN)
+{       
+_putchar('8');
+return(8);
+}
+else
+{
+if (n < 0)
+n = n * -1;
+_putchar('0' + (n % 10));
+return (n % 10);
+}
 }
