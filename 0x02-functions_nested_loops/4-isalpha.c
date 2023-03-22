@@ -1,7 +1,7 @@
 /**
- * _isalpha - here 
- * @c: int
- * Return: 0 or 1
+ *_isalpha - here
+ *@c: int
+ *Return: 0 or 1
  */
 int _isalpha(int c)
 {
