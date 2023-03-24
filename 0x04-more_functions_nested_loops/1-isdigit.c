@@ -1,7 +1,10 @@
+#include "main.h"
+
 /**
  * _isdigit - Entry point
  *@c: int to be tested
- * Return: 1 (digit)
+ * prints a String
+ * Return: Always 0 (Success)
  **/
 
 int _isdigit(int c)
