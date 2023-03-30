@@ -7,19 +7,13 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int i = 0;
+int counter, cmpVal;
 
-while (s1[i] != '\0' || s2[i] != '\0')
+counter = 0;
+while (s1[counter] == s2[counter] && s1[counter] != '\0')
 {
-if (s1[i] < s2[i])
-{
-return (-1);
+counter++;
 }
-else if (s1[i] > s2[i])
-{
-return (1);
-}
-i++;
-}
-return (0);
+cmpVal = s1[counter] - s2[counter];
+return (cmpVal);
 }
