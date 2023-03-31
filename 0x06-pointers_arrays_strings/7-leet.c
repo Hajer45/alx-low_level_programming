@@ -11,12 +11,13 @@
  */
 char *leet(char *s)
 {
+int i, j;
 char *leet_chars[] = {"4", "3", "0", "7", "1"};
 char *letters[] = {"aA", "eE", "oO", "tT", "lL"};
 
-for (int i = 0; i < 5; i++)
+for (i = 0; i < 5; i++)
 {
-for (int j = 0; s[j] != '\0'; j++)
+for (j = 0; s[j] != '\0'; j++)
 {
 if (s[j] == letters[i][0] || s[j] == letters[i][1])
 {
